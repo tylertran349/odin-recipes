@@ -1,32 +1,36 @@
-h1 {
-    text-align: center;
-    font-family: "Courier New", "Times New Roman", sans-serif;
-    color: darkblue;
-}
-
 body {
-    background-color: paleturquoise;
+    background-color: pink;
+    text-align: center;
 }
 
-#image {
-    height: 400px;
-    width: auto;
+img {
+    height: auto;
+    width: 700px;
+    border: 2px solid black;
+}
+
+h1 {
+    font-family: "Courier New", "Times New Roman", Sans-serif;
+    color: darkgoldenrod;
 }
 
 h2 {
-    text-align: center;
-    font-family: "Courier New", "Times New Roman", sans-serif;
-    color: red;
+    font-family: "Courier New", "Times New Roman", Sans-serif;
+    color: darkgoldenrod;
+    font-size: 30px;
 }
 
-ul {
+p {
+    color: darkgoldenrod;
     text-align: center;
-    font-family: "Brush Script MT", "Times New Roman", sans-serif;
-    color: darkolivegreen
+    font-family: "Helvetica", "Times New Roman", Sans-serif;
 }
 
-li {
+#list {
     text-align: center;
-    font-family: "Brush Script MT", "Times New Roman", sans-serif;
-    color: darkolivegreen
+    list-style-type: none;
+}
+
+a {
+    font-family: "Helvetica", "Times New Roman", Sans-serif;
 }
