@@ -2,69 +2,171 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
         <title>Cioppino Recipe</title>
         <style>
             body {
-                font-family: "Courier New", "Times New Roman", sans-serif;
+                background-image: linear-gradient(to bottom right, #D8B5FF, #1EAE98);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                margin: 0px;
+                height: 150%;
+                width: 100%;
+                font-family: 'Quicksand', sans-serif;
+                padding-top: 48px;
+                padding-bottom: 48px;
+                font-size: 18px;
             }
-            h1 {
-                text-align: center;
-                color: darkolivegreen
+
+            #recipe-container {
+                width: 66.66%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 36px;
+                gap: 36px;
+                background: white;
+                box-shadow: 0 5px 15px rgb(0 0 0 / 0.7);
+                padding: 36px;
+                border: 5px solid black;
             }
-            h2, h3 {
-                color: darkolivegreen;
+
+            #title {
+                font-size: 72px;
+                font-family: 'Amatic SC', 'Quicksand', sans-serif;
+                font-weight: 550;
             }
-            img {
-                display: block;
-                margin: auto;
+
+            #picture {
+                width: 80%;
                 height: auto;
-                width: 600px;
+                border-radius: 24px;
+                box-shadow: 0 3px 12px rgb(0 0 0 / 0.7);
+            }
+
+            #description-container  {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #description-title {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #description {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                font-size: 18px;
+            }
+
+            #ingredients-container, #instructions-container, #credits-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #ingredients-title, #instructions-title, #credits-title {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #ingredients-list, #instructions-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 8px;
+                margin: 0px;
+            }
+
+            #credits-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                margin: 0px;
+            }
+
+            #homepage-button {
+                height: 75px;
+                width: 150px;
+                font-size: 18px;
                 border: 2px solid black;
+                border-radius: 8px;
+                background: white;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            #time-and-servings {
+                margin-top: -20px;
             }
         </style>
     </head>
     <body>
-        <h1>Cioppino</h1>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/cioppino-1646257948.jpeg" alt="Picture of cioppino">
-        <h2>What is Cioppino?</h2>
-        <p>Cioppino is a fish stew typically made with a combination of Dungeness crab, clams, shrimp,
-            squid, mussels, and fish. The dish can be served with toasted bread. The bread acts as a 
-            starch, similar to pasta, and is typically dipped into the cioppino broth itself. It originates 
-            from San Francisco and is an Italian-American dish that was originally developed in the late 
-            1800s by Italian immigrants living in San Francisco.
-        </p>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>3 tbsp olive oil</li>
-            <li>1 large fennel bulb, thinly sliced</li>
-            <li>1 onion, chopped</li>
-            <li>3 large shallots, chopped</li>
-            <li>2 tsp salt</li>
-            <li>4 large garlic cloves, finely chopped</li>
-            <li>3/4 teaspoon dried crushed red pepper flakes, plus more to taste</li>
-            <li>1/4 cup tomato paste</li>
-            <li>1 (28-ounce) can diced tomatoes in juice</li>
-            <li>1 1/2 cups dry white wine</li>
-            <li>5 cups fish stock</li>
-            <li>1 bay leaf</li>
-            <li>1 pound manilla clams, scrubbed</1i>
-            <li>1 pound mussels, scrubbed, debearded</li>
-            <li>1 pound uncooked large shrimp, peeled and deveined</li>
-            <li>1 1/2 pounds assorted firm-fleshed fish fillets such as halibut or salmon, cut into 2-inch chunks</li>
-        </ul>
-        <h2>Instructions</h2>
-        <ol>
-            <li>Heat the oil in a very large pot over medium heat. Add the fennel, onion, shallots, and salt and 
-                saute until the onion is translucent, about 10 minutes. Add the garlic and 3/4 teaspoon of red 
-                pepper flakes, and saute 2 minutes. Stir in the tomato paste. Add tomatoes with their juices, 
-                wine, fish stock and bay leaf. Cover and bring to a simmer. Reduce the heat to medium-low. Cover 
-                and simmer until the flavors blend, about 30 minutes.</li>
-            <li>Add the clams and mussels to the cooking liquid. Cover and cook until the clams and mussels begin 
-                to open, about 5 minutes. Add the shrimp and fish. Simmer gently until the fish and shrimp are 
-                just cooked through, and the clams are completely open, stirring gently, about 5 minutes longer 
-                (discard any clams and mussels that do not open). Season the soup, to taste, with more salt and 
-                red pepper flakes.</li>
-            <li>Ladle the soup into bowls and serve.</li>
-        </ol>
+        <div id="recipe-container">
+            <div id="title">Cioppino</div>
+            <img id="picture" src="../cioppino-picture.jpg" alt="A picture of smoked baby back ribs">
+            <div id="time-and-servings">🕒 <strong>1 hr 30 mins</strong> | Servings <strong>6</strong></div>
+            <div id="description-container">
+                <div id="description-title">Description</div>
+                <div id="description">Cioppino is a fish stew typically made with a combination of Dungeness crab, clams, shrimp, squid, mussels, and fish. The dish can be served with toasted bread. The bread acts as a starch, similar to pasta, and is typically dipped into the cioppino broth itself. It originates from San Francisco and is an Italian-American dish that was originally developed in the late 1800s by Italian immigrants living in San Francisco.</div>
+            </div>
+            <div id="ingredients-container">
+                <div id="ingredients-title">Ingredients</div>
+                <ul id="ingredients-list">
+                    <li id="ingredient">3 tbsp olive oil</li>
+                    <li id="ingredient">1 large fennel bulb, thinly sliced</li>
+                    <li id="ingredient">1 onion, chopped</dli>
+                    <li id="ingredient">3 large shallots, chopped</li>
+                    <li id="ingredient">2 tsp salt</li>
+                    <li id="ingredient">4 large garlic cloves, finely chopped</li>
+                    <li id="ingredient">3/4 teaspoon dried crushed red pepper flakes, plus more to taste</li>
+                    <li id="ingredient">1/4 cup tomato paste</li>
+                    <li id="ingredient">1 (28-ounce) can diced tomatoes in juice</li>
+                    <li id="ingredient">1 1/2 cups dry white wine</li>
+                    <li id="ingredient">5 cups fish stock</li>
+                    <li id="ingredient">1 bay leaf</li>
+                    <li id="ingredient">1 pound manilla clams, scrubbed</li>
+                    <li id="ingredient">1 pound mussels, scrubbed, debearded</li>
+                    <li id="ingredient">1 pound uncooked large shrimp, peeled and deveined</li>
+                    <li id="ingredient">1 1/2 pounds assorted firm-fleshed fish fillets such as halibut or salmon, cut into 2-inch chunks</li>
+                </ul>
+            </div>
+            <div id="instructions-container">
+                <div id="instructions-title">Instructions</div>
+                <div id="instructions-list">
+                    <div id="instruction">1. Heat the oil in a very large pot over medium heat. Add the fennel, onion, shallots, and salt and saute until the onion is translucent, about 10 minutes. Add the garlic and 3/4 teaspoon of red pepper flakes, and saute 2 minutes. Stir in the tomato paste. Add tomatoes with their juices, wine, fish stock and bay leaf. Cover and bring to a simmer. Reduce the heat to medium-low. Cover and simmer until the flavors blend, about 30 minutes.</div>
+                    <div id="instruction">2. Add the clams and mussels to the cooking liquid. Cover and cook until the clams and mussels begin to open, about 5 minutes. Add the shrimp and fish. Simmer gently until the fish and shrimp are just cooked through, and the clams are completely open, stirring gently, about 5 minutes longer (discard any clams and mussels that do not open). Season the soup, to taste, with more salt and red pepper flakes.</div>
+                    <div id="instruction">3. Ladle the soup into bowls and serve.</div>
+                </div>
+            </div>
+            <div id="credits-container">
+                <div id="credits-title">Credits</div>
+                <div id="credits-list">
+                    <a href="https://foodnetwork.co.uk/recipes/cioppino/" id="credit">Recipe: <strong>Food Network UK</strong></a>
+                    <a href="https://www.delish.com/uk/cooking/recipes/a34559639/cioppino-recipe/" id="credit">Picture: <strong>Delish.com</strong></a>
+                </div>
+            </div>
+            <button id="homepage-button" onclick="location.href='../index.html';">Back to Homepage</button>
+        </div>
     </body>
 </html>
