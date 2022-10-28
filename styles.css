@@ -11,7 +11,7 @@ body {
     align-items: center;
     padding: 0px;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     min-height: 100%;
     width: 100%;
 }
@@ -26,6 +26,8 @@ body {
 
 #title {
     font-size: 72px;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 550;
 }
 
 #gif {
@@ -56,18 +58,21 @@ body {
 
 #recipes-title {
     font-size: 36px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 #button {
     width: 150px;
     height: 100px;
-    background: lightgray;
+    background: white;
     color: black;
+    border: 3px solid black;
     font-size: 24px;
-    border: none;
     box-shadow: 0 3px 12px rgb(0 0 0 / 0.7);
     border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    transition: transform .2s;
 }
 
 #footer {
@@ -77,4 +82,12 @@ body {
     text-align: center;
     font-size: 18px;
     padding-bottom: 8px;
+}
+
+#button:active {
+    background: #00000044;
+}
+
+#button:hover {
+    transform: scale(1.1);
 }
