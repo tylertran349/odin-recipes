@@ -92,8 +92,11 @@ body {
     transform: scale(1.1);
 }
 
-a#credit {
+#credit {
+    margin-bottom: 36px;
+}
+
+a {
     color: black;
     text-decoration: none;
-    margin-bottom: 36px;
 }
