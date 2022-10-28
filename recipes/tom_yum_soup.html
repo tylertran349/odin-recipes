@@ -2,89 +2,202 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
         <title>Tom Yum Soup Recipe</title>
         <style>
             body {
-                font-family: "Courier New", "Times New Roman", sans-serif;
+                background-image: linear-gradient(to bottom right, #D8B5FF, #1EAE98);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                margin: 0px;
+                height: 150%;
+                width: 100%;
+                font-family: 'Quicksand', sans-serif;
+                padding-top: 48px;
+                font-size: 18px;
             }
-            h1 {
-                text-align: center;
-                color: orangered;
+
+            #recipe-container {
+                width: 66.66%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 36px;
+                gap: 36px;
+                background: white;
+                box-shadow: 0 5px 15px rgb(0 0 0 / 0.7);
+                padding: 36px;
+                border: 5px solid black;
             }
-            h2, h3 {
-                color: orangered;
+
+            #title {
+                font-size: 72px;
+                font-family: 'Amatic SC', 'Quicksand', sans-serif;
+                font-weight: 550;
             }
-            img {
-                display: block;
-                margin: auto;
+
+            #picture {
+                width: 80%;
                 height: auto;
-                width: 600px;
+                border-radius: 24px;
+                box-shadow: 0 3px 12px rgb(0 0 0 / 0.7);
+            }
+
+            #description-container  {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #description-title {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #description {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                font-size: 18px;
+            }
+
+            #ingredients-container, #instructions-container, #credits-container, #ingredients-container-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #ingredients-title, #instructions-title, #credits-title, #ingredients-title-2 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #ingredients-list, #instructions-list, #ingredients-list-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 8px;
+                margin: 0px;
+            }
+
+            #credits-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                margin: 0px;
+            }
+
+            #homepage-button {
+                height: 75px;
+                width: 150px;
+                font-size: 18px;
                 border: 2px solid black;
+                border-radius: 8px;
+                background: white;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            #time-and-servings {
+                margin-top: -20px;
+            }
+
+            #footer {
+                position: static;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 155%;
+                width: 100%;
+                margin-top: 17px;
+                margin-bottom: 8px;
+            }
+
+            #instructions-subtitle {
+                font-size: 24px;
+                font-weight: bold;
             }
         </style>
     </head>
-    <body> 
-        <h1>Tom Yum Soup</h1>
-        <img src="https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog.jpg" alt="Tom Yum soup with shrimp picture">
-        <h2>What is Tom Yum Soup?</h2>
-        <p>Tom Yum is a type of Thai hot and sour soup. The iconic flavors of the soup primarily come 
-            from three herbs: lemongrass, galangal, and kaffir lime leaves. It can be made with any
-            meat or seafood, but the most popular version of the dish is made with shrimp 
-            (Tom Yum Goong - goong means shrimp). It's one of the most iconic Thai dishes and is
-            loved by pretty much every Thai person. It's served at street-side eateries, fancy
-            restaurants, and commonly made at home.
-        </p>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>4 cups shrimp stock or unsaled chicken stock</li>
-            <li>12 medium sized shrimp, head and shell on if possible</li>
-            <li>1 stalk lemongrass (use 2 if small), smashed and cut into 1-2 inch pieces</li>
-            <li>6 kaffir lime leaves</li>
-            <li>7-8 slices galangal</li>
-            <li>2-5 Thai chilies, to taste, bruised and cut into large pieces</li>
-            <li>3 cups oyster mushrooms, cut or tear large ones into bite-sized pieces</li>
-            <li>1/4 Thai chili paste</li>
-            <li>3 tbsp fish sauce</li>
-            <li>1/2 cup fresh lime juice</li>
-            <li>1 tsp sugar</li>
-            <li>Cilantro for garnish</li>
-        </ul>
-        <h3>Ingredients for Shrimp Stock (if you need to make it)</h3>
-        <ul>
-            <li>Shrimp shells and heads from at least 12 shrimp</li>
-            <li>1 tbsp neutral oil</1i>
-            <li>4 1/2 cups water</li>
-            <li>(Optional) 1/2 onion, chopped</li>
-        </ul>
-        <p><strong>Note:</strong><em> Galangal, lemongrass and kaffir lime leaves are traditionally left in the soup as garnish, but they are very tough in large pieces and are not meant to be eaten. Make sure you let your guests know not to eat the herbs or remove them after they're done infusing, before adding the mushrooms.</em></p>
-        <h2>Instructions</h2>
-        <h3>For the Shrimp Stock (if you need to make it)</h3>
-        <ol>
-            <li>Peel the shrimp and remove the heads, then add all the shells and heads into a stainless 
-                steel pot with a little bit of vegetable oil. Saute over medium high heat, pressing out 
-                any tomalley from the shrimp heads with your spatula.</li>
-            <li>Once the bits that are stuck to the bottom of the pot start to brown and smell wonderfully 
-                like grilled shrimp, deglaze with the water and scrape all the bits off the bottom of the
-                pot.</li>
-            <li>Add the onions, if desired, and simmer over medium low heat for 45 minutes. Strain, making
-                sure to get out any liquid from inside the shrimp heads. You need about 4 cups for the 
-                soup, but if you don't have enough you can add water.</li>
-        </ol>
-        <h3>For the Tom Yum Soup</h3>
-        <ol>
-            <li>Add the shrimp or chicken stock, lemongrass, makrut lime leaves, galangal and chilies to 
-                the pot. Bring to a boil and let it boil for about 5 minutes until you can smell the 
-                fragrance of the herbs from the pot.</li>
-            <li>When the soup is done simmering, add the oyster mushrooms, and bring the soup back to a boil.</li>
-            <li>Once the soup comes back to a boil, add the shrimp and when the soup just starts to bubble again, 
-                turn off the heat. Let the residual heat of the soup cook the shrimp completely; another minute or so. 
-                (If you're using very large shrimp, you may need to cook it longer, but check first to avoid 
-                overcooking shrimp).</li>
-            <li>Add the lime juice, fish sauce, chili paste, and sugar and stir. Taste and adjust the seasoning to your 
-                liking. (You may need to add a little more sugar, depending on how sweet your brand of 
-                chili paste is.)</li>
-            <li>Garnish with cilantro leaves and serve with rice, or turn it into a “Kuay Tiew Tom Yum” by pouring the 
-                soup over rice noodles for a pho-style meal!</li>
-        </ol>
+    <body>
+        <div id="recipe-container">
+            <div id="title">Tom Yum Soup</div>
+            <img id="picture" src="../tom-yum-picture.jpg" alt="A picture of a bowl of Tom Yum Soup">
+            <div id="time-and-servings">🕒 <strong>30 mins, 1 hr if making shrimp stock</strong> | Servings <strong>4</strong></div>
+            <div id="description-container">
+                <div id="description-title">Description</div>
+                <div id="description">Tom Yum is a type of Thai hot and sour soup. The iconic flavors of the soup primarily come from three herbs: lemongrass, galangal, and kaffir lime leaves. It can be made with any meat or seafood, but the most popular version of the dish is made with shrimp (Tom Yum Goong - goong means shrimp). It's one of the most iconic Thai dishes and is loved by pretty much every Thai person. It's served at street-side eateries, fancy restaurants, and commonly made at home.</div>
+            </div>
+            <div id="ingredients-container">
+                <div id="ingredients-title">Ingredients</div>
+                <ul id="ingredients-list">
+                    <li id="ingredient">4 cups shrimp stock or unsaled chicken stock</li>
+                    <li id="ingredient">12 medium sized shrimp, head and shell on if possible</li>
+                    <li id="ingredient">1 stalk lemongrass (use 2 if small), smashed and cut into 1-2 inch pieces</dli>
+                    <li id="ingredient">6 kaffir lime leaves</li>
+                    <li id="ingredient">7-8 slices galangal</li>
+                    <li id="ingredient">2-5 Thai chilies, to taste, bruised and cut into large pieces</li>
+                    <li id="ingredient">3 cups oyster mushrooms, cut or tear large ones into bite-sized pieces</li>
+                    <li id="ingredient">1/4 cup Thai chili paste</li>
+                    <li id="ingredient">3 tbsp fish sauce</li>
+                    <li id="ingredient">1/2 cup fresh lime juice</li>
+                    <li id="ingredient">1 tsp sugar</li>
+                    <li id="ingredient">Cilantro for garnish</li>
+                </ul>
+            </div>
+            <div id="ingredients-container-2">
+                <div id="ingredients-title-2">Ingredients for Shrimp Stock (if you need to make it)</div>
+                <ul id="ingredients-list-2">
+                    <li id="ingredient-2">Shrimp shells and heads from at least 12 shrimp</li>
+                    <li id="ingredient-2">1 tbsp neutral oil</li>
+                    <li id="ingredient-2">4 1/2 cups water</li>
+                    <li id="ingredient-2">(Optional) 1/2 onion, chopped</li>
+                </ul>
+            </div>
+            <div id="note"><strong>Note: </strong><em>Galangal, lemongrass and kaffir lime leaves are traditionally left in the soup as garnish, but they are very tough in large pieces and are not meant to be eaten. Make sure you let your guests know not to eat the herbs or remove them after they're done infusing, before adding the mushrooms.</em></div>
+            <div id="instructions-container">
+                <div id="instructions-title">Instructions</div>
+                <div id="instructions-subtitle">Shrimp Stock (if you need to make it)</div>
+                <div id="instructions-list">
+                    <div id="instruction">1. Peel the shrimp and remove the heads, then add all the shells and heads into a stainless steel pot with a little bit of vegetable oil. Saute over medium high heat, pressing out any tomalley from the shrimp heads with your spatula.</div>
+                    <div id="instruction">2. Once the bits that are stuck to the bottom of the pot start to brown and smell wonderfully like grilled shrimp, deglaze with the water and scrape all the bits off the bottom of the pot.</div>
+                    <div id="instruction">3. Add the onions, if desired, and simmer over medium low heat for 45 minutes. Strain, making sure to get out any liquid from inside the shrimp heads. You need about 4 cups for the soup, but if you don't have enough you can add water.</div>
+                </div>
+                <div id="instructions-subtitle">Tom Yum Soup</div>
+                <div id="instructions-list">
+                    <div id="instruction">1. Add the shrimp or chicken stock, lemongrass, makrut lime leaves, galangal and chilies to the pot. Bring to a boil and let it boil for about 5 minutes until you can smell the fragrance of the herbs from the pot.</div>
+                    <div id="instruction">2. When the soup is done simmering, add the oyster mushrooms, and bring the soup back to a boil.</div>
+                    <div id="instruction">3. Once the soup comes back to a boil, add the shrimp and when the soup just starts to bubble again, turn off the heat. Let the residual heat of the soup cook the shrimp completely; another minute or so. (If you're using very large shrimp, you may need to cook it longer, but check first to avoid overcooking shrimp).</div>
+                    <div id="instruction">4. Add the lime juice, fish sauce, chili paste, and sugar and stir. Taste and adjust the seasoning to your liking. (You may need to add a little more sugar, depending on how sweet your brand of chili paste is.)</div>
+                    <div id="instruction">5. Garnish with cilantro leaves and serve with rice, or turn it into a “Kuay Tiew Tom Yum” by pouring the soup over rice noodles for a pho-style meal!</div>
+                </div>
+            </div>
+            <div id="credits-container">
+                <div id="credits-title">Credits</div>
+                <div id="credits-list">
+                    <a href="https://hot-thai-kitchen.com/tom-yum-goong/" id="credit">Recipe and picture: <strong>Hot Thai Kitchen</strong></a>
+                </div>
+            </div>
+            <button id="homepage-button" onclick="location.href='../index.html';">Back to Homepage</button>
+        </div>
+        <div id="footer">Copyright © 2022 Tyler Tran</div>
     </body>
 </html>
