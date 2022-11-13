@@ -14,14 +14,14 @@
                 align-items: center;
                 padding: 0;
                 margin: 0;
-                height: 100vh;
-                width: 100vw;
+                height: 150%;
+                width: 100%;
                 font-family: 'Quicksand', sans-serif;
                 padding-top: 3rem;
             }
 
             #recipe-container {
-                max-width: 50%;
+                width: 40%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -42,8 +42,8 @@
 
             #picture {
                 width: 80%;
-                height: 25%;
-                object-fit: contain;
+                aspect-ratio: 16/9;
+                object-fit: cover;
                 border-radius: 1.5rem;
                 box-shadow: 0 3px 12px rgb(0 0 0 / 0.7);
             }
@@ -100,8 +100,9 @@
             }
 
             #homepage-button {
-                height: 4.5rem;
-                width: 9rem;
+                height: 4rem;
+                width: 8rem;
+                font-size: 1rem;
                 border: 0.125rem solid black;
                 border-radius: 0.5rem;
                 background: white;
@@ -124,7 +125,7 @@
             }
 
             #time-and-servings {
-                margin-top: -2rem;
+                margin-top: -1.5rem;
             }
 
             #footer {
