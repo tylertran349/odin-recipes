@@ -63,7 +63,7 @@ body {
 }
 
 #button {
-    height: 6rem;
+    height: 5.5rem;
     aspect-ratio: 4/3;
     background: white;
     transition: transform .2s;
